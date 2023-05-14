@@ -29,7 +29,7 @@ html {
 .contenedor-header header .logo a {
   font-family: "Righteous";
   font-size: 36px;
-  color: #9FC131;
+  color: #9fc131;
   text-decoration: none;
 }
 .contenedor-header header ul {
@@ -45,11 +45,11 @@ html {
   text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover {
-  color: #9FC131;
+  color: #9fc131;
 }
 
 .nav-responsible {
-  background-color: #9FC131;
+  background-color: #9fc131;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -75,7 +75,7 @@ html {
 }
 .inicio .contenido-banner img {
   margin-top: 40px;
-  border: 10px solid #9FC131;
+  border: 10px solid #9fc131;
   display: block;
   border-radius: 100%;
   width: 80%;
@@ -104,7 +104,7 @@ html {
   transition: 0.3s;
 }
 .inicio .contenido-banner .redes a:hover {
-  background-color: #9FC131;
+  background-color: #9fc131;
 }
 
 .sobremi {
@@ -122,7 +122,7 @@ html {
   margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span {
-  color: #9FC131;
+  color: #9fc131;
   font-weight: 20px;
 }
 .sobremi h2 {
@@ -150,11 +150,11 @@ html {
 }
 .sobremi .fila .col ul li strong {
   display: inline-block;
-  color: #9FC131;
+  color: #9fc131;
   width: 130px;
 }
 .sobremi .fila .col ul li span {
-  background-color: #9FC131;
+  background-color: #9fc131;
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
@@ -166,7 +166,7 @@ html {
 .sobremi .fila .col .contenedor-intereses .intereses {
   width: 100px;
   height: 100px;
-  background-color: #005C53;
+  background-color: #005c53;
   border-radius: 10px;
   margin: 0 15px 15px 0;
   display: flex;
@@ -176,7 +176,7 @@ html {
   transition: 0.3s;
 }
 .sobremi .fila .col .contenedor-intereses .intereses:hover {
-  background-color: #9FC131;
+  background-color: #9fc131;
 }
 .sobremi .fila .col .contenedor-intereses .intereses i {
   font-size: 30px;
@@ -202,10 +202,166 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #9FC131;
+  background-color: #9fc131;
   z-index: -1;
   transition: 1s;
 }
 .sobremi button:hover .overlay {
   width: 100%;
+}
+
+.skills {
+  background-color: #005c53;
+  color: #fff;
+  padding: 50px 20px;
+}
+.skills .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+.skills h2 {
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0px;
+}
+.skills .fila {
+  display: flex;
+}
+.skills .fila .col {
+  width: 50%;
+  padding: 0 20px;
+}
+.skills .fila .col h3 {
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+}
+.skills .skills .skill > span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.skills .skill .barra-skills {
+  height: 8px;
+  width: 80%;
+  background-color: #042940;
+  position: relative;
+  margin-bottom: 30px;
+}
+.skills .skill .barra-skills span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #9fc131;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+.skills .skill .barra-skills .progreso {
+  background-color: #9fc131;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+}
+
+.skills .skill .javascript {
+  width: 0%;
+  animation: 2s javascript forwards;
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 58%;
+  }
+}
+.skills .skill .htmlcss {
+  width: 0%;
+  animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 89%;
+  }
+}
+.skills .skill .sass {
+  width: 0%;
+  animation: 2s sass forwards;
+}
+@keyframes sass {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.skills .skill .photoshop {
+  width: 0%;
+  animation: 2s photoshop forwards;
+}
+@keyframes photoshop {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 77%;
+  }
+}
+.skills .skill .comunicacion {
+  width: 0%;
+  animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skills .skill .trabajoEnEquipo {
+  width: 0%;
+  animation: 2s trabajoEnEquipo forwards;
+}
+@keyframes trabajoEnEquipo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 86%;
+  }
+}
+.skills .skill .creatividad {
+  width: 0%;
+  animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 77%;
+  }
+}
+.skills .skill .gestionProyectos {
+  width: 0%;
+  animation: 2s gestionProyectos forwards;
+}
+@keyframes gestionProyectos {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 94%;
+  }
 }/*# sourceMappingURL=style.css.map */
