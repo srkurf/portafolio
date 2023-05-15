@@ -16,6 +16,7 @@ html {
   top: 0;
   left: 0;
   z-index: 99;
+  border-bottom: 1px solid #9fc131;
   header {
     max-width: 1100px;
     margin: auto;
@@ -164,7 +165,7 @@ html {
         .intereses {
           width: 100px;
           height: 100px;
-          background-color: #005c53;
+          background-color: #9fc131;
           border-radius: 10px;
           margin: 0 15px 15px 0;
           display: flex;
@@ -173,7 +174,7 @@ html {
           justify-content: center;
           transition: 0.3s;
           &:hover {
-            background-color: #9fc131;
+            background-color: #d6d58e;
           }
         }
         .intereses i {
@@ -212,7 +213,7 @@ html {
 }
 //Estilos seccion SKILLS
 .skills {
-  background-color: #005c53;
+  background-color: #042f49;
   color: #fff;
   padding: 50px 20px;
   .contenido-seccion {
@@ -272,69 +273,200 @@ html {
   }
 }
 //Funciones Javascript
-.skills .skill{
-    .javascript{
-        width: 0%;
-        animation: 2s javascript forwards;
-      }
-      @keyframes javascript {
-        0%{width: 0%;}
-        100%{width: 58%;}
+.skills .skill {
+  .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+  }
+  @keyframes javascript {
+    0% {
+      width: 0%;
     }
-    .htmlcss{
-        width: 0%;
-        animation: 2s htmlcss forwards;
-      }
-      @keyframes htmlcss {
-        0%{width: 0%;}
-        100%{width: 89%;}
+    100% {
+      width: 58%;
     }
-    .sass{
-        width: 0%;
-        animation: 2s sass forwards;
-      }
-      @keyframes sass {
-        0%{width: 0%;}
-        100%{width: 90%;}
+  }
+  .htmlcss {
+    width: 0%;
+    animation: 2s htmlcss forwards;
+  }
+  @keyframes htmlcss {
+    0% {
+      width: 0%;
     }
-    .photoshop{
-        width: 0%;
-        animation: 2s photoshop forwards;
-      }
-      @keyframes photoshop {
-        0%{width: 0%;}
-        100%{width: 77%;}
+    100% {
+      width: 89%;
     }
-    .comunicacion{
-        width: 0%;
-        animation: 2s comunicacion forwards;
-      }
-      @keyframes comunicacion {
-        0%{width: 0%;}
-        100%{width: 80%;}
+  }
+  .sass {
+    width: 0%;
+    animation: 2s sass forwards;
+  }
+  @keyframes sass {
+    0% {
+      width: 0%;
     }
-    .trabajoEnEquipo{
-        width: 0%;
-        animation: 2s trabajoEnEquipo forwards;
-      }
-      @keyframes trabajoEnEquipo {
-        0%{width: 0%;}
-        100%{width: 86%;}
+    100% {
+      width: 90%;
     }
-    .creatividad{
-        width: 0%;
-        animation: 2s creatividad forwards;
-      }
-      @keyframes creatividad {
-        0%{width: 0%;}
-        100%{width: 77%;}
+  }
+  .photoshop {
+    width: 0%;
+    animation: 2s photoshop forwards;
+  }
+  @keyframes photoshop {
+    0% {
+      width: 0%;
     }
-    .gestionProyectos{
-        width: 0%;
-        animation: 2s gestionProyectos forwards;
-      }
-      @keyframes gestionProyectos {
-        0%{width: 0%;}
-        100%{width: 94%;}
+    100% {
+      width: 77%;
     }
+  }
+  .comunicacion {
+    width: 0%;
+    animation: 2s comunicacion forwards;
+  }
+  @keyframes comunicacion {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  .trabajoEnEquipo {
+    width: 0%;
+    animation: 2s trabajoEnEquipo forwards;
+  }
+  @keyframes trabajoEnEquipo {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 86%;
+    }
+  }
+  .creatividad {
+    width: 0%;
+    animation: 2s creatividad forwards;
+  }
+  @keyframes creatividad {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 77%;
+    }
+  }
+  .gestionProyectos {
+    width: 0%;
+    animation: 2s gestionProyectos forwards;
+  }
+  @keyframes gestionProyectos {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 94%;
+    }
+  }
+}
+//Estilos seccion Portafolio
+.portafolio {
+  background-color: #042940;
+  color: #fff;
+  padding: 50px 20px;
+  .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+  }
+  h2 {
+    font-size: 48px;
+    font-family: "Righteous";
+    text-align: center;
+    padding: 20px 0;
+  }
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .proyecto {
+      position: relative;
+      max-width: 340px;
+      height: fit-content;
+      margin: 10px;
+      cursor: pointer;
+      img {
+        width: 100%;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: linear-gradient(
+          rgba(214, 213, 142, 0.8),
+          rgba(28, 182, 152, 0.8)
+        );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 1s;
+        font-size: 18px;
+        letter-spacing: 3px;
+        opacity: 0;
+        &:hover {
+          opacity: 1;
+        }
+        &:hover h3 {
+          margin-bottom: 0px;
+        }
+        h3 {
+          margin-bottom: 20px;
+          transition: 1s;
+        }
+      }
+    }
+  }
+}
+//footer
+footer {
+  background-color: #042f49;
+  color: #fff;
+  border-top: 1px solid #9fc131;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+    &:hover {
+      background-color: #9fc131;
+    }
+  }
+  .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #9fc131;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+  }
 }
