@@ -1,274 +1,322 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>SrKurf | David Arias - Portafolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/favicon-modified.png" type="image/x-icon">
+  </head>
+  <body>
     <!-- Menu Header -->
     <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">SrKurf</a>
-            </div>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                        <!-- <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li> -->
-                        <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
-                        <!-- <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li> -->
-                    </ul>
-                </nav>
-                <div class="nav-responsible" onclick="mostrarOcultarMenu()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-        </header>
+      <header>
+        <div class="logo">
+          <a href="#">SrKurf</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <!-- <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li> -->
+            <li>
+              <a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a>
+            </li>
+            <!-- <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li> -->
+          </ul>
+        </nav>
+        <div class="nav-responsible" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
     </div>
     <!-- Seccion Inicio -->
     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-imagen">
-                <img src="./img/david-modified.png" alt="yo" width="200px">
-            </div>
-            <h1>DAVID ARIAS</h1>
-            <h2>Estudiante de Programacion | Software</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com/david.arias.srkurf" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://twitter.com/ariaskf_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.instagram.com/arias.kf/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/srkurf" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
+      <div class="contenido-banner">
+        <div class="contenedor-imagen">
+          <img src="./img/david-modified.png" alt="yo" width="200px" />
         </div>
+        <h1>DAVID ARIAS</h1>
+        <h2>Estudiante de Programacion | Software</h2>
+        <div class="redes">
+          <a href="https://www.facebook.com/david.arias.srkurf" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com/ariaskf_" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/arias.kf/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/srkurf" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
     </section>
     <!-- Seccion Sobre Mi -->
     <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>SOBRE MI</h2>
-            <p><span>Hola, soy David Arias </span>Soy un estudiante de programación apasionado y dedicado, con una gran habilidad para resolver problemas complejos. Me encanta aprender nuevos lenguajes de programación y explorar diferentes herramientas para mejorar mis habilidades. Mi enfoque y determinación me permiten enfrentarme a desafíos y alcanzar mis objetivos.</p>
-            <div class="fila">
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            29/09/1999
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            arias.kuf@gmail.com
-                        </li>
-                        <li>
-                            <strong>Website</strong>
-                            www.srkurf.com
-                        </li>
-                        <li>
-                            <strong>Cuidad</strong>
-                            Guatemala, Guatemala
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="intereses">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>Juegos</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>Musica</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-futbol"></i>
-                            <span>Deporte</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-brands fa-windows"></i>
-                            <span>Windows</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-brands fa-apple"></i>
-                            <span>Mac OS</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-brands fa-android"></i>
-                            <span>Android</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-car"></i>
-                            <span>Autos</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>Fotos</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="contenido-seccion">
+        <h2>SOBRE MI</h2>
+        <p>
+          <span>Hola, soy David Arias </span>Soy un estudiante de programación
+          apasionado y dedicado, con una gran habilidad para resolver problemas
+          complejos. Me encanta aprender nuevos lenguajes de programación y
+          explorar diferentes herramientas para mejorar mis habilidades. Mi
+          enfoque y determinación me permiten enfrentarme a desafíos y alcanzar
+          mis objetivos.
+        </p>
+        <div class="fila">
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                29/09/1999
+              </li>
+              <li>
+                <strong>Email</strong>
+                arias.kuf@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+                www.srkurf.com
+              </li>
+              <li>
+                <strong>Cuidad</strong>
+                Guatemala, Guatemala
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="intereses">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Juegos</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-headphones"></i>
+                <span>Musica</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-futbol"></i>
+                <span>Deporte</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-windows"></i>
+                <span>Windows</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-apple"></i>
+                <span>Mac OS</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-android"></i>
+                <span>Android</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-car"></i>
+                <span>Autos</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-camera"></i>
+                <span>Fotos</span>
+              </div>
             </div>
+          </div>
         </div>
-        <button>
-            Descargar CV <i class="fa-solid fa-download"></i>
-            <span class="overlay"></span>
-        </button>
+      </div>
+      <button>
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
     </section>
     <!-- Seccion Skills -->
     <section id="skills" class="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <div class="col">
-                    <h3>Habilidades</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skills">
-                            <div class="progreso">
-                                <span>58%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skills">
-                            <div class="progreso">
-                                <span>89%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SASS</span>
-                        <div class="barra-skills">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Photoshop</span>
-                        <div class="barra-skills">
-                            <div class="progreso">
-                                <span>77%</span>
-                            </div>
-                        </div>
-                    </div>
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <div class="col">
+            <h3>Habilidades</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skills">
+                <div class="progreso">
+                  <span>58%</span>
                 </div>
-                <div class="col">
-                    <h3>Habilidades Profecionales</h3>
-                    <div class="skill">
-                        <span>Comunicacion</span>
-                        <div class="barra-skills">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skills">
-                            <div class="progreso">
-                                <span>86%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skills">
-                            <div class="progreso">
-                                <span>77%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Gestion de Proyectos</span>
-                        <div class="barra-skills">
-                            <div class="progreso">
-                                <span>94%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skills">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>SASS</span>
+              <div class="barra-skills">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Photoshop</span>
+              <div class="barra-skills">
+                <div class="progreso">
+                  <span>77%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h3>Habilidades Profecionales</h3>
+            <div class="skill">
+              <span>Comunicacion</span>
+              <div class="barra-skills">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skills">
+                <div class="progreso">
+                  <span>86%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skills">
+                <div class="progreso">
+                  <span>77%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Gestion de Proyectos</span>
+              <div class="barra-skills">
+                <div class="progreso">
+                  <span>94%</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Seccion Portafolio -->
     <section id="portafolio" class="portafolio">
-        <div class="contenido-seccion">
-            <h2>Portafolio</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="./img/portafolio/Imagenes Apiladas.png" alt="">
-                    <div class="overlay">
-                        <h3>Diseño</h3>
-                        <p>HTML / CSS</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="./img/portafolio/Tarjeta.png" alt="">
-                    <div class="overlay">
-                        <h3>Diseño</h3>
-                        <p>HTML / CSS</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="./img/portafolio/Pago confirmado.png" alt="">
-                    <div class="overlay">
-                        <h3>Diseño</h3>
-                        <p>HTML / CSS</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="./img/portafolio/Tarjeta Nike.png" alt="">
-                    <div class="overlay">
-                        <h3>Diseño</h3>
-                        <p>HTML / CSS</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="./img/portafolio/menu animado.png" alt="">
-                    <div class="overlay">
-                        <h3>Diseño</h3>
-                        <p>HTML / CSS</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="./img/portafolio/Pagina Web 1.png" alt="">
-                    <div class="overlay">
-                        <h3>Diseño</h3>
-                        <p>HTML / CSS</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="./img/portafolio/Pagina Web 2.png" alt="">
-                    <div class="overlay">
-                        <h3>Diseño</h3>
-                        <p>HTML / CSS / Javascript</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="./img/portafolio/Encriptador.png" alt="">
-                    <div class="overlay">
-                        <h3>Diseño</h3>
-                        <p>HTML / CSS / Javascript</p>
-                    </div>
-                </div>
-            </div>
+      <div class="contenido-seccion">
+        <h2>Portafolio</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <a href="https://img-genshin.netlify.app/" target="_blank">
+              <img src="./img/portafolio/Imagenes Apiladas.png" alt="" />
+              <div class="overlay">
+                <h3>Imagenes Apiladas</h3>
+                <p>HTML / CSS</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="https://carta-mona.netlify.app/" target="_blank">
+              <img src="./img/portafolio/Tarjeta.png" alt="" />
+              <div class="overlay">
+                <h3>Diseño Carta</h3>
+                <p>HTML / CSS</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="https://pagocheck.netlify.app/" target="_blank">
+              <img src="./img/portafolio/Pago confirmado.png" alt="" />
+              <div class="overlay">
+                <h3>Diseño Pago</h3>
+                <p>HTML / CSS</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="https://cardniked.netlify.app/" target="_blank">
+              <img src="./img/portafolio/Tarjeta Nike.png" alt="" />
+              <div class="overlay">
+                <h3>Diseño Carta</h3>
+                <p>HTML / CSS</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="https://menuanimadod.netlify.app/" target="_blank">
+              <img src="./img/portafolio/menu animado.png" alt="" />
+              <div class="overlay">
+                <h3>Diseño Menu</h3>
+                <p>HTML / CSS</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="https://keching-inf.netlify.app/" target="_blank">
+              <img src="./img/portafolio/Pagina Web 1.png" alt="" />
+              <div class="overlay">
+                <h3>Diseño Pagina Web</h3>
+                <p>HTML / CSS</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="https://shogun-raiden.netlify.app/" target="_blank">
+              <img src="./img/portafolio/Pagina Web 2.png" alt="" />
+              <div class="overlay">
+                <h3>Diseño Pagina Web</h3>
+                <p>HTML / CSS / Javascript</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyecto">
+            <a href="https://srkurf.github.io/encriptador/" target="_blank">
+              <img src="./img/portafolio/Encriptador.png" alt="" />
+              <div class="overlay">
+                <h3>Encriptador</h3>
+                <p>HTML / CSS / Javascript</p>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Footer -->
     <footer>
-        <a href="#inicio" class="arriba"><i class="fa-solid fa-angles-up"></i></a>
-        <div class="redes">
-            <a href="https://www.facebook.com/david.arias.srkurf" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://twitter.com/ariaskf_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.instagram.com/arias.kf/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/srkurf" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
+      <a href="#inicio" class="arriba"><i class="fa-solid fa-angles-up"></i></a>
+      <div class="redes">
+        <a href="https://www.facebook.com/david.arias.srkurf" target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com/ariaskf_" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/arias.kf/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://github.com/srkurf" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
     </footer>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
