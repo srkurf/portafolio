@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Barra de Navegacion -->
+    <!-- Menu Header -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
@@ -17,15 +17,15 @@
             </div>
                 <nav id="nav">
                     <ul>
-                        <li><a href="#inicio">INICIO</a></li>
-                        <li><a href="#sobremi">SOBRE MI</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <!-- <li><a href="#curriculum">CURRICULUM</a></li> -->
-                        <li><a href="#portafolio">PORTAFOLIO</a></li>
-                        <!-- <li><a href="#contacto">CONTACTO</a></li> -->
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <!-- <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li> -->
+                        <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                        <!-- <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li> -->
                     </ul>
                 </nav>
-                <div class="nav-responsible">
+                <div class="nav-responsible" onclick="mostrarOcultarMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
         </header>
@@ -269,5 +269,6 @@
             <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

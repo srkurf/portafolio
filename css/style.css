@@ -462,4 +462,56 @@ footer .arriba {
   border-radius: 50%;
   line-height: 50px;
   font-size: 18px;
+}
+
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .nav-responsible {
+    display: block;
+  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #042940;
+    width: 180px;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid #9fc131;
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sobremi .fila {
+    display: block;
+  }
+  .sobremi .fila .col {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .skills .fila {
+    display: block;
+  }
+  .skills .fila .col {
+    width: 100%;
+  }
+  .skills .fila .col .barra-skills {
+    width: 100%;
+  }
+  .portafolio .galeria {
+    display: block;
+    width: 100%;
+  }
+  .portafolio .galeria .proyecto {
+    max-width: 100%;
+  }
+  .portafolio .galeria .proyecto img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

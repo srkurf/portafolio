@@ -470,3 +470,54 @@ footer {
     font-size: 18px;
   }
 }
+//Responsive
+@media screen and (max-width:980px){
+  nav{
+    display: none;
+  }
+  .nav-responsible{
+    display: block;
+  }
+  nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #042940;
+    width: 180px;
+    ul{
+      display: block !important;
+      li{
+        border-bottom: 1px solid #9fc131;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+@media screen and (max-width:700px){
+  .sobremi .fila{
+    display: block;
+    .col{
+      width: fit-content;
+    }
+  }
+  .skills .fila{
+    display: block;
+    .col{
+      width: 100%;
+      .barra-skills{
+        width: 100%;
+      }
+    }
+  }
+  .portafolio .galeria{
+    display: block;
+    width: 100%;
+    .proyecto{
+      max-width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
