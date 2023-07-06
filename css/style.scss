@@ -272,6 +272,68 @@ html {
     }
   }
 }
+//Estilos seccion Contacto
+.contacto {
+  background: #042f49;
+  color: #fff;
+  padding: 50px 0;
+  .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+  }
+  h2 {
+    font-size: 48px;
+    font-family: "Righteous";
+    text-align: center;
+    padding: 20px 0;
+  }
+  .fila {
+    display: flex;
+    justify-content: center;
+  }
+  .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+  }
+}
+.contacto .col input,
+.contacto .col textarea {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #042940;
+  color: #fff;
+  font-size: 18px;
+}
+.contacto button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #9fc131;
+    z-index: -1;
+    transition: 1s;
+  }
+}
+button:hover .overlay {
+  width: 100%;
+}
 //Funciones Javascript
 .skills .skill {
   .javascript {
@@ -455,7 +517,7 @@ footer {
       background-color: #9fc131;
     }
   }
-  .arriba{
+  .arriba {
     display: block;
     width: 50px;
     height: 50px;
@@ -471,53 +533,59 @@ footer {
   }
 }
 //Responsive
-@media screen and (max-width:980px){
-  nav{
+@media screen and (max-width: 980px) {
+  nav {
     display: none;
   }
-  .nav-responsible{
+  .nav-responsible {
     display: block;
   }
-  nav.responsive{
+  nav.responsive {
     display: block;
     position: absolute;
     right: 0;
     top: 75px;
     background-color: #042940;
     width: 180px;
-    ul{
+    ul {
       display: block !important;
-      li{
+      li {
         border-bottom: 1px solid #9fc131;
         padding: 10px 0;
       }
     }
   }
 }
-@media screen and (max-width:700px){
-  .sobremi .fila{
+@media screen and (max-width: 700px) {
+  .sobremi .fila {
     display: block;
-    .col{
+    .col {
       width: fit-content;
     }
   }
-  .skills .fila{
+  .skills .fila {
     display: block;
-    .col{
+    .col {
       width: 100%;
-      .barra-skills{
+      .barra-skills {
         width: 100%;
       }
     }
   }
-  .portafolio .galeria{
+  .portafolio .galeria {
     display: block;
     width: 100%;
-    .proyecto{
+    .proyecto {
       max-width: 100%;
-      img{
+      img {
         width: 100%;
       }
+    }
+  }
+  .contacto .fila {
+    display: block;
+    .col {
+      width: 100%;
     }
   }
 }
