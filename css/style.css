@@ -289,7 +289,8 @@ html {
   display: flex;
   justify-content: center;
 }
-.contacto .col {
+
+.contacto form .col .col {
   width: 50%;
   padding: 10px;
   position: relative;
