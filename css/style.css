@@ -305,6 +305,7 @@ html {
   background-color: #042940;
   color: #fff;
   font-size: 18px;
+  resize: none;
 }
 
 .contacto button {

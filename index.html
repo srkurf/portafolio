@@ -318,23 +318,28 @@
         <h2>CONTACTO</h2>
         <div class="fila">
           <!-- Formulario -->
+          <form action="https://formsubmit.co/edam210@gmail.com" method="POST" />
           <div class="col">
-            <input type="text" placeholder="Tu Nombre" />
-            <input type="text" placeholder="Numero telefonico" />
-            <input type="text" placeholder="Dirrecion de correo" />
-            <input type="text" placeholder="Tema" />
+            <input type="text" placeholder="Tu Nombre" name="Nombre" required/>
+            <input type="text" placeholder="Numero telefonico" name="Telefono" required/>
+            <input type="text" placeholder="Dirrecion de correo" name="Correo" required/>
+            <input type="text" placeholder="Tema" name="Tema"/>
             <textarea
               name=""
               id=""
               cols="30"
               rows="10"
               placeholder="Mensaje"
+              name="Mensaje"
             ></textarea>
-            <button>
+            <button type="submit">
               Enviar Mensaje <i class="fa-sharp fa-solid fa-paper-plane"></i>
               <span class="overlay"></span>
             </button>
+            <input type="hidden" name="_next" value="https://srkurf.github.io/portafolio/">
+            <input type="hidden" name="_captcha" value="false">
           </div>
+          </form>
         </div>
       </div>
     </section>
