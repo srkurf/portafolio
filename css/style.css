@@ -290,8 +290,8 @@ html {
   justify-content: center;
 }
 
-.contacto form .col .col {
-  width: 50%;
+.contacto form .col {
+  width: 100%;
   padding: 10px;
   position: relative;
 }
